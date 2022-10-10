@@ -1,5 +1,5 @@
 {
-  "extends": "@pancakeswap/eslint-config-pancake",
+  "extends": "@unitedfarmers/eslint-config-ufx",
   "rules": {
     "import/no-extraneous-dependencies": [
       "error",
