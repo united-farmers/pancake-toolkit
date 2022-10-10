@@ -6,7 +6,7 @@ import erc20 from "./abi/erc20.json";
 import rawMiniExtended from "../rawAddresses/mini-extended";
 
 const rawLists = {
-  "pcs-mini-extended": rawMiniExtended,
+  "ufx-mini-extended": rawMiniExtended,
 };
 
 const getTokensChainData = async (listName: string, addressArray?: string[]): Promise<any[]> => {

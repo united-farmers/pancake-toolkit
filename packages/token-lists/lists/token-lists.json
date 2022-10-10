@@ -1,16 +1,16 @@
 {
-  "https://tokens.pancakeswap.finance/pancakeswap-default.json": {
-    "name": "PancakeSwap Default",
-    "homepage": "https://pancakeswap.finance"
+  "https://tokens.unitedfarmers.finance/unitedfarmers-default.json": {
+    "name": "United Farmers Default",
+    "homepage": "https://unitedfarmers.finance"
   },
-  "https://tokens.pancakeswap.finance/pancakeswap-extended.json": {
-    "name": "PancakeSwap Extended",
-    "homepage": "https://pancakeswap.finance"
+  "https://tokens.unitedfarmers.finance/unitedfarmers-extended.json": {
+    "name": "United Farmers Extended",
+    "homepage": "https://unitedfarmers.finance"
     
   },
-  "https://tokens.pancakeswap.finance/pancakeswap-top-100.json": {
-    "name": "PancakeSwap Top 100",
-    "homepage": "https://pancakeswap.finance"
+  "https://tokens.unitedfarmers.finance/unitedfarmers-top-100.json": {
+    "name": "United Farmers Top 100",
+    "homepage": "https://unitedfarmers.finance"
     
   },
   "https://tokens.coingecko.com/binance-smart-chain/all.json": {

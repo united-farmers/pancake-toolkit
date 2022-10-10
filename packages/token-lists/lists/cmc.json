@@ -8060,6 +8060,14 @@
       "logoURI": "https://s2.coinmarketcap.com/static/img/coins/64x64/7186.png"
     },
     {
+      "name": "United Farmers X",
+      "symbol": "UFX",
+      "address": "0x0E09Fa0xCe2392BD358233796e60719a31B87E113Ce76F8dBB73Bd3Ade0a17ECC321fD13a19e81cE82",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://console.filebase.com/object/unitedfarmersx/UFX-LOGO.png"
+    },
+    {
       "name": "CakeBaker",
       "symbol": "CAKEBAKER",
       "address": "0x3fd8DCF7ce608DdD11C56E920C70EdAfFDd915e9",

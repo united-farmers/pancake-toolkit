@@ -1,22 +1,22 @@
 import fs from "fs";
 import path from "path";
 import { TokenList } from "@uniswap/token-lists";
-import { version as pancakeswapDefaultVersion } from "../lists/pancakeswap-default.json";
-import { version as pancakeswapExtendedVersion } from "../lists/pancakeswap-extended.json";
-import { version as pancakeswapTop15Version } from "../lists/pancakeswap-top-15.json";
-import { version as pancakeswapTop100Version } from "../lists/pancakeswap-top-100.json";
+import { version as unitedfarmersDefaultVersion } from "../lists/unitedfarmers-default.json";
+import { version as unitedfarmersExtendedVersion } from "../lists/unitedfarmers-extended.json";
+import { version as unitedfarmersTop15Version } from "../lists/unitedfarmers-top-15.json";
+import { version as unitedfarmersTop100Version } from "../lists/unitedfarmers-top-100.json";
 import { version as coingeckoVersion } from "../lists/coingecko.json";
 import { version as cmcVersion } from "../lists/cmc.json";
-import { version as pancakeswapMiniVersion } from "../lists/pancakeswap-mini.json";
-import { version as pancakeswapMiniExtendedVersion } from "../lists/pancakeswap-mini-extended.json";
-import pancakeswapDefault from "./tokens/pancakeswap-default.json";
-import pancakeswapExtended from "./tokens/pancakeswap-extended.json";
-import pancakeswapTop100 from "./tokens/pancakeswap-top-100.json";
-import pancakeswapTop15 from "./tokens/pancakeswap-top-15.json";
+import { version as unitedfarmersMiniVersion } from "../lists/unitedfarmers-mini.json";
+import { version as unitedfarmersMiniExtendedVersion } from "../lists/unitedfarmers-mini-extended.json";
+import unitedfarmersDefault from "./tokens/unitedfarmers-default.json";
+import unitedfarmersExtended from "./tokens/unitedfarmers-extended.json";
+import unitedfarmersTop100 from "./tokens/unitedfarmers-top-100.json";
+import unitedfarmersTop15 from "./tokens/unitedfarmers-top-15.json";
 import coingecko from "./tokens/coingecko.json";
 import cmc from "./tokens/cmc.json";
-import pancakeswapMini from "./tokens/pancakeswap-mini.json";
-import pancakeswapMiniExtended from "./tokens/pancakeswap-mini-extended.json";
+import unitedfarmersMini from "./tokens/unitedfarmers-mini.json";
+import unitedfarmersMiniExtended from "./tokens/unitedfarmers-mini-extended.json";
 
 export enum VersionBump {
   "major" = "major",
@@ -31,37 +31,37 @@ type Version = {
 };
 
 const lists = {
-  "pancakeswap-default": {
-    list: pancakeswapDefault,
-    name: "PancakeSwap Default",
-    keywords: ["pancakeswap", "default"],
-    logoURI: "https://pancakeswap.finance/logo.png",
+  "unitedfarmers-default": {
+    list: unitedfarmersDefault,
+    name: "United Farmers Default",
+    keywords: ["unitedfarmers", "default"],
+    logoURI: "https://unitedfarmers.finance/logo.png",
     sort: false,
-    currentVersion: pancakeswapDefaultVersion,
+    currentVersion: unitedfarmersDefaultVersion,
   },
-  "pancakeswap-extended": {
-    list: pancakeswapExtended,
-    name: "PancakeSwap Extended",
-    keywords: ["pancakeswap", "extended"],
-    logoURI: "https://pancakeswap.finance/logo.png",
+  "unitedfarmers-extended": {
+    list: unitedfarmersExtended,
+    name: "United Farmers Extended",
+    keywords: ["unitedfarmers", "extended"],
+    logoURI: "https://unitedfarmers.finance/logo.png",
     sort: true,
-    currentVersion: pancakeswapExtendedVersion,
+    currentVersion: unitedfarmersExtendedVersion,
   },
-  "pancakeswap-top-100": {
-    list: pancakeswapTop100,
-    name: "PancakeSwap Top 100",
-    keywords: ["pancakeswap", "top 100"],
-    logoURI: "https://pancakeswap.finance/logo.png",
+  "unitedfarmers-top-100": {
+    list: unitedfarmersTop100,
+    name: "United Farmers Top 100",
+    keywords: ["unitedfarmers", "top 100"],
+    logoURI: "https://unitedfarmers.finance/logo.png",
     sort: true,
-    currentVersion: pancakeswapTop100Version,
+    currentVersion: unitedfarmersTop100Version,
   },
-  "pancakeswap-top-15": {
-    list: pancakeswapTop15,
-    name: "PancakeSwap Top 15",
-    keywords: ["pancakeswap", "top 15"],
-    logoURI: "https://pancakeswap.finance/logo.png",
+  "unitedfarmers-top-15": {
+    list: unitedfarmersTop15,
+    name: "United Farmers Top 15",
+    keywords: ["unitedfarmers", "top 15"],
+    logoURI: "https://unitedfarmers.finance/logo.png",
     sort: true,
-    currentVersion: pancakeswapTop15Version,
+    currentVersion: unitedfarmersTop15Version,
   },
   coingecko: {
     list: coingecko,
@@ -80,21 +80,21 @@ const lists = {
     sort: true,
     currentVersion: cmcVersion,
   },
-  "pancakeswap-mini": {
-    list: pancakeswapMini,
-    name: "PancakeSwap Mini",
-    keywords: ["pancakeswap", "binance", "mini program", "mini"],
-    logoURI: "https://pancakeswap.finance/logo.png",
+  "unitedfarmers-mini": {
+    list: unitedfarmersMini,
+    name: "United Farmers Mini",
+    keywords: ["unitedfarmers", "binance", "mini program", "mini"],
+    logoURI: "https://unitedfarmers.finance/logo.png",
     sort: true,
-    currentVersion: pancakeswapMiniVersion,
+    currentVersion: unitedfarmersMiniVersion,
   },
-  "pancakeswap-mini-extended": {
-    list: pancakeswapMiniExtended,
-    name: "PancakeSwap Mini Ext",
-    keywords: ["pancakeswap", "binance", "mini program", "mini", "extended"],
-    logoURI: "https://pancakeswap.finance/logo.png",
+  "unitedfarmers-mini-extended": {
+    list: unitedfarmersMiniExtended,
+    name: "United Farmers Mini Ext",
+    keywords: ["unitedfarmers", "binance", "mini program", "mini", "extended"],
+    logoURI: "https://unitedfarmers.finance/logo.png",
     sort: true,
-    currentVersion: pancakeswapMiniExtendedVersion,
+    currentVersion: unitedfarmersMiniExtendedVersion,
   },
 };
 

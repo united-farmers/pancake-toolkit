@@ -4,7 +4,7 @@
 
 [[redirects]]
   from = "/"
-  to = "/pancakeswap-default.json"
+  to = "/unitedfarmers-default.json"
   status = 301
   force = false
 
